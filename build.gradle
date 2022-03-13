@@ -1,0 +1,23 @@
+group 'org.atlanmod.neoemf'
+version '1.0-SNAPSHOT'
+
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    ext {
+        commonsVersion = "1.1.0"
+        neoemfVersion = "2.0.1"
+        zooVersion = "1.0.5"
+        emfVersion = "[2.15.0,)"
+    }
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+}
